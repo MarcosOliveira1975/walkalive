@@ -1,0 +1,165 @@
+body {
+    background-image: url(../assets/home_picture.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 120px;
+    height: auto;
+    z-index: 1000;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.container1 {
+    position: relative;
+    width: 200px;
+    height: 100px;
+
+}
+
+.circle2 {
+    position: relative;
+    top: 0;
+    left: 400px;
+    width: 170px;
+    height: 170px;
+    background-color: #f15207;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 100px 30px 0 200px;
+}
+
+.circle1 {
+    position: absolute;
+    top: 10px;
+    left: 410px;
+    width: 150px;
+    height: 150px;
+    background-color: #f5d59b;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 30px 0 200px;
+}
+
+.counter1 {
+    position: absolute;
+    top: -30px;
+    left: 425px;
+    width: 120px;
+    height: 30px;
+    background-color: #c9dcf1;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(7, 7, 7, 0.5);
+    margin: 100px 30px 0 200px;
+}
+
+.container2 {
+    position: relative;
+    width: 50px;
+    height: 50px;
+
+}
+
+.circle4 {
+    position: relative;
+    top: 0;
+    left: 400px;
+    width: 170px;
+    height: 170px;
+    background-color: #f15207;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 100px 30px 0 200px;
+}
+
+.circle3 {
+    position: absolute;
+    top: 10px;
+    left: 410px;
+    width: 150px;
+    height: 150px;
+    background-color: #f5d59b;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 30px 0 200px;
+}
+
+.counter2 {
+    position: absolute;
+    top: -30px;
+    left: 425px;
+    width: 120px;
+    height: 30px;
+    background-color: #c9dcf1;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(7, 7, 7, 0.5);
+    margin: 100px 30px 0 200px;
+}
+
+.step {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 110px;
+    left: 655px;
+}
+
+.km {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 110px;
+    left: 635px;
+}
+
+.iconstep {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    left: 670px;
+}
+
+.iconkm {
+    transform: rotate(225deg);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    left: 665px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+    width: 300px;
+    height: 170px;
+    border-radius: 4px;
+    border: none;
+}
+
+.counter1,
+.counter2 {
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 5px;
+}
