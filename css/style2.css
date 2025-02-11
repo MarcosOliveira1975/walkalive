@@ -1,147 +1,102 @@
+/* Define um background responsivo */
 body {
     background-image: url(../assets/home_picture.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
+    background-position: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Ajusta o logo para ser responsivo */
 .logo {
     position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 120px;
+    top: 10px;
+    left: 10px;
+    width: 15%;
+    max-width: 120px;
     height: auto;
     z-index: 1000;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
 }
 
-.container1 {
-    position: relative;
-    width: 200px;
-    height: 100px;
-
-}
-
-.circle2 {
-    position: relative;
-    top: 0;
-    left: 400px;
-    width: 170px;
-    height: 170px;
-    background-color: #f15207;
-    border-radius: 50%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 100px 30px 0 200px;
-}
-
-.circle1 {
-    position: absolute;
-    top: 10px;
-    left: 410px;
-    width: 150px;
-    height: 150px;
-    background-color: #f5d59b;
-    border-radius: 50%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 0 30px 0 200px;
-}
-
-.counter1 {
-    position: absolute;
-    top: -30px;
-    left: 425px;
-    width: 120px;
-    height: 30px;
-    background-color: #c9dcf1;
-    border-radius: 15px;
-    box-shadow: 0px 4px 8px rgba(7, 7, 7, 0.5);
-    margin: 100px 30px 0 200px;
-}
-
+/* Contêiner principal */
+.container1,
 .container2 {
     position: relative;
-    width: 50px;
-    height: 50px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
 }
 
+/* Círculos principais */
+.circle1,
+.circle2,
+.circle3,
 .circle4 {
-    position: relative;
-    top: 0;
-    left: 400px;
-    width: 170px;
-    height: 170px;
-    background-color: #f15207;
+    width: 40vw;
+    max-width: 170px;
+    height: 40vw;
+    max-height: 170px;
     border-radius: 50%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 100px 30px 0 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.circle1,
 .circle3 {
     position: absolute;
-    top: 10px;
-    left: 410px;
-    width: 150px;
-    height: 150px;
+    width: 35vw;
+    max-width: 150px;
+    height: 35vw;
+    max-height: 150px;
     background-color: #f5d59b;
-    border-radius: 50%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 0 30px 0 200px;
 }
 
+/* Contadores */
+.counter1,
 .counter2 {
     position: absolute;
-    top: -30px;
-    left: 425px;
-    width: 120px;
+    top: -20px;
+    width: 80px;
     height: 30px;
     background-color: #c9dcf1;
     border-radius: 15px;
     box-shadow: 0px 4px 8px rgba(7, 7, 7, 0.5);
-    margin: 100px 30px 0 200px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-top: 5px;
 }
 
-.step {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(0, 0, 0);
-    position: absolute;
-    top: 110px;
-    left: 655px;
-}
-
-.km {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(0, 0, 0);
-    position: absolute;
-    top: 110px;
-    left: 635px;
-}
-
-.iconstep {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 30px;
-    left: 670px;
+/* Ícones */
+.iconstep,
+.iconkm {
+    width: 10vw;
+    max-width: 40px;
+    height: auto;
+    margin-top: 10px;
 }
 
 .iconkm {
     transform: rotate(225deg);
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 30px;
-    left: 665px;
 }
 
+/* Sidebar (vídeos) */
 .sidebar {
     position: fixed;
-    top: 50px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
@@ -149,17 +104,100 @@ body {
 }
 
 iframe {
-    width: 300px;
-    height: 170px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     border-radius: 4px;
     border: none;
 }
 
-.counter1,
-.counter2 {
-    font-size: 15px;
-    font-weight: normal;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-top: 5px;
+/* ✅ Media Queries para telas menores */
+@media (max-width: 768px) {
+    .logo {
+        width: 20%;
+        max-width: 100px;
+    }
+
+    .circle1,
+    .circle2,
+    .circle3,
+    .circle4 {
+        width: 30vw;
+        max-width: 120px;
+        height: 30vw;
+        max-height: 120px;
+    }
+
+    .counter1,
+    .counter2 {
+        width: 70px;
+        font-size: 1rem;
+    }
+
+    .iconstep,
+    .iconkm {
+        width: 8vw;
+        max-width: 30px;
+    }
+
+    .sidebar {
+        top: unset;
+        bottom: 10px;
+        right: 10px;
+        width: 90%;
+        max-width: 320px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    iframe {
+        width: 45%;
+    }
+}
+
+/* ✅ Media Queries para celulares pequenos */
+@media (max-width: 480px) {
+    .logo {
+        width: 25%;
+        max-width: 80px;
+    }
+
+    .container1,
+    .container2 {
+        width: 80%;
+        text-align: center;
+    }
+
+    .circle1,
+    .circle2,
+    .circle3,
+    .circle4 {
+        width: 50vw;
+        max-width: 100px;
+        height: 50vw;
+        max-height: 100px;
+    }
+
+    .counter1,
+    .counter2 {
+        width: 60px;
+        font-size: 0.9rem;
+    }
+
+    .iconstep,
+    .iconkm {
+        width: 7vw;
+        max-width: 25px;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+
+    iframe {
+        width: 90%;
+    }
 }
